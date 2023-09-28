@@ -47,52 +47,53 @@ const items2: MenuProps["items"] = [
 });
 
 type InformationDetail = {
-  internalUse: boolean,
-  show: boolean
+  internalUse: boolean;
+  show: boolean;
 };
 
 type ProfileInformationDetail = {
-  mandatory: boolean,
-  show: boolean
+  mandatory: boolean;
+  show: boolean;
 };
 
 export type PersonalInformationDetail = {
-  currentResidence: InformationDetail,
-  dateOfBirth: InformationDetail,
-  emailId: InformationDetail,
-  firstName: InformationDetail,
-  gender: InformationDetail,
-  idNumber: InformationDetail,
-  lastName: InformationDetail,
-  nationality: InformationDetail,
-  phoneNumber: InformationDetail,
+  currentResidence: InformationDetail;
+  dateOfBirth: InformationDetail;
+  emailId: InformationDetail;
+  firstName: InformationDetail;
+  gender: InformationDetail;
+  idNumber: InformationDetail;
+  lastName: InformationDetail;
+  nationality: InformationDetail;
+  phoneNumber: InformationDetail;
 };
 
 export type ProfileDetail = {
-  education: ProfileInformationDetail,
-  experience: ProfileInformationDetail,
-  resume: ProfileInformationDetail,
+  education: ProfileInformationDetail;
+  experience: ProfileInformationDetail;
+  resume: ProfileInformationDetail;
 };
 
-export interface PersonalInformationQuestionsDetail extends PersonalInformationDetail {
-  personalQuestions: Array<Object>, 
-};
+export interface PersonalInformationQuestionsDetail
+  extends PersonalInformationDetail {
+  personalQuestions: Array<Object>;
+}
 
 export interface ProfilenQuestionsDetail extends ProfileDetail {
-  profileQuestions: Array<Object>, 
-};
+  profileQuestions: Array<Object>;
+}
 
 type Attributes = {
-  coverImage: string, 
-  customisedQuestions: Array<Object>, 
-  personalInformation: PersonalInformationQuestionsDetail, 
-  profile: ProfilenQuestionsDetail, 
+  coverImage: string;
+  customisedQuestions: Array<Object>;
+  personalInformation: PersonalInformationQuestionsDetail;
+  profile: ProfilenQuestionsDetail;
 };
 
 export type Data = {
-  attributes: Attributes,
-  id: string, 
-  type: string,
+  attributes: Attributes;
+  id: string;
+  type: string;
 };
 
 function Form() {

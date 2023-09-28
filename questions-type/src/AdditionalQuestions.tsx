@@ -4,11 +4,7 @@ import { Card } from "antd";
 import { Data } from "./Form";
 import Questions from "./Questions";
 
-function AdditionalQuestions({
-  data,
-}: {
-  data?: Data;
-}) {
+function AdditionalQuestions({ data }: { data?: Data }) {
   const customisedQuestions = data?.attributes?.customisedQuestions;
 
   const createQuestion = () => {
