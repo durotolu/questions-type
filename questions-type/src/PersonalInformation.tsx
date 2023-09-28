@@ -86,7 +86,7 @@ function PersonalInformation({
   return (
     <Card
       title="Personal Information"
-      style={{ minWidth: 500 }}
+      style={{ minWidth: 500, boxShadow: "3px 3px 14px 0px rgba(190, 190, 190, 0.30)" }}
       headStyle={{ background: "#D0F7FA", textAlign: "start" }}
     >
       <div>

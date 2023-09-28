@@ -24,7 +24,7 @@ function CoverImage({ coverImage }: { coverImage?: string }) {
     <>
       <Card
         title="Upload cover image"
-        style={{ minWidth: 450 }}
+        style={{ minWidth: 450, boxShadow: "3px 3px 14px 0px rgba(190, 190, 190, 0.30)" }}
         headStyle={{ background: "#D0F7FA", textAlign: "start" }}
       >
         <>
@@ -46,7 +46,7 @@ function CoverImage({ coverImage }: { coverImage?: string }) {
               </div>
             </>
           ) : (
-            <ImageUploader label="Client Logo" accept="image/*" />
+            <ImageUploader label="" accept="image/*" />
           )}
         </>
       </Card>
